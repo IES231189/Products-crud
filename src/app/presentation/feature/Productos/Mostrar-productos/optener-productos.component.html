@@ -1,0 +1,21 @@
+<app-table
+  [data]="productos"
+  [columns]="columns"
+  (edit)="onEdit($event)"
+  (delete)="onDelete($event)"
+></app-table>
+
+
+<app-delete-component-component
+  *ngIf="actionType === 'delete' && selectedProduct"
+  [registroTable]="selectedProduct"
+  (confirmDelete)="onConfirmDelete()"
+  (cancelDelete)="onCancelDelete()"
+></app-delete-component-component>
+
+
+<app-edit-component-component
+  *ngIf="actionType === 'edit' && selectedProduct"
+  [registroTable]="selectedProduct"
+  (GuardarCambios)="onEditProduct($event)"
+></app-edit-component-component>
