@@ -6,4 +6,5 @@ export interface Producto {
   Stock: number;
   Id_categoria: number;
   Imagen_url: string;
+  Fecha_creacion:string
 }
