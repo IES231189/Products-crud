@@ -1,0 +1,21 @@
+<app-table
+  [data]="oferta"
+  [columns]="columns"
+  (edit)="onEdit($event)"
+  (delete)="onDelete($event)"
+></app-table>
+
+
+<app-delete-component-component
+  *ngIf="actionType === 'delete' && selectedOfert"
+  [registroTable]="selectedOfert"
+  (confirmDelete)="onConfirmDelete()"
+  (cancelDelete)="onCancelDelete()"
+></app-delete-component-component>
+
+
+<app-edit-component-component
+  *ngIf="actionType === 'edit' && selectedOfert"
+  [registroTable]="selectedOfert"
+  (GuardarCambios)="onEditOferta($event)"
+></app-edit-component-component>
