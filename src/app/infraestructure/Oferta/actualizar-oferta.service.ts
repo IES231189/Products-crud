@@ -7,7 +7,7 @@ import { HtmlParser } from '@angular/compiler';
 @Injectable({
   providedIn: 'root'
 })
-export class ActualizarOfertaService {
+export class ActualizarOfertaRepositoryService {
 
   apiUrl = ''
 

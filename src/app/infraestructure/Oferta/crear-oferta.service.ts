@@ -8,7 +8,7 @@ import { Ofertas } from '../../Domain/entities/Ofertas/Oferta';
 @Injectable({
   providedIn: 'root'
 })
-export class CrearOfertaService {
+export class CrearOfertaRepositoryService {
 
   apiUrl='http://localhost:8080/ofertas/'
 
@@ -19,5 +19,5 @@ export class CrearOfertaService {
     return this.http.post<Ofertas>(this.apiUrl , oferta)
   }
 
-  
+
 }

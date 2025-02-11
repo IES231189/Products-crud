@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class EliminarofertaService {
+export class EliminarofertaRepositoryService {
 
   apiUrl = 'http://localhost:8080/ofertas/'
 

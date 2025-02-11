@@ -9,7 +9,7 @@ import { Ofertas } from '../../Domain/entities/Ofertas/Oferta';
   providedIn: 'root'
 })
 
-export class MostrarOfertaService {
+export class MostrarOfertaRepositoryService {
 
   private apiUrl = 'http://localhost:8080/ofertas/'
 
