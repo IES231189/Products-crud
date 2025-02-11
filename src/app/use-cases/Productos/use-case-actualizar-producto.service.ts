@@ -1,6 +1,6 @@
 
 import { Injectable } from '@angular/core';
-import { ActualizarService } from '../../infraestructure/repositories/actualizar.service';
+import { ActualizarService } from '../../infraestructure/Producto/actualizar.service';
 import { Producto } from '../../Domain/entities/Producto/productos';
 
 
