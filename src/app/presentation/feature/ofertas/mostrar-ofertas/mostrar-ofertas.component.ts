@@ -25,6 +25,8 @@ export class MostrarOfertasComponent {
 
   actionType: 'edit' | 'delete' | null = null;
 
+  showForm: boolean = false;
+
   constructor(private ofertaService: OfertasPresentationService) { }
 
 
@@ -87,7 +89,7 @@ export class MostrarOfertasComponent {
         ()=>{
           console.log('Oferta actualizado correctamente');
           this.selectedOfert= null;
-          this.actionType = null
+          this.actionType = null;
         },(error)=>{
           console.error('Error al actualizar la oferta' , error)
         }
@@ -96,8 +98,13 @@ export class MostrarOfertasComponent {
 
 
 
+    openForm() {
+      this.showForm = true;
+    }
 
-
+    closeForm() {
+      this.showForm = false;
+    }
 
 
 }

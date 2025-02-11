@@ -21,6 +21,7 @@ export class OptenerProductosComponent implements OnInit {
 
   selectedProduct: Producto | null = null;
   actionType: 'edit' | 'delete' | null = null;
+  showForm: boolean = false;
 
   constructor(private productoService: ProductoPresentacionService) {}
 
@@ -88,6 +89,16 @@ export class OptenerProductosComponent implements OnInit {
       }
     );
   }
+
+
+  openForm() {
+    this.showForm = true;
+  }
+
+  closeForm() {
+    this.showForm = false;
+  }
+
 
 
 }

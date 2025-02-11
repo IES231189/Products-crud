@@ -6,7 +6,7 @@
 
       <!-- Campos del Formulario -->
       <ng-container *ngFor="let key of getObjectKeys(editedData)">
-        <div *ngIf="key !== 'Id_producto' && key !== 'fecha_creacion' && key!=='Imagen_url'" class="mb-2">
+        <div *ngIf="key !== 'Id_producto' && key !== 'fecha_creacion' && key!=='Imagen_url' && key !=='Id_oferta'"  class="mb-2">
           <label class="block text-sm font-medium text-gray-700 mb-1">{{ key }}</label>
           <input
             [(ngModel)]="editedData[key]"

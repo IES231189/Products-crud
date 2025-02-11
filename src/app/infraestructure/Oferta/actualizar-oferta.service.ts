@@ -9,7 +9,7 @@ import { HtmlParser } from '@angular/compiler';
 })
 export class ActualizarOfertaRepositoryService {
 
-  apiUrl = ''
+  apiUrl = 'http://localhost:8080/ofertas/'
 
   constructor(private http:HttpClient) { }
 

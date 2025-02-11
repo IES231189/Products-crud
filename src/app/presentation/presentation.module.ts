@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioProductosComponent } from './feature/Productos/formulario-productos/formulario-productos.component';
 import { TableModule } from './shared/Table/table.module';
 import { OptenerProductosComponent } from './feature/Productos/Mostrar-productos/optener-productos.component';
@@ -18,7 +18,9 @@ import { FormularioOfertasComponent } from './feature/ofertas/formulario-ofertas
     HttpClientModule,
     FormsModule,
     CommonModule,
-    TableModule
+    TableModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   exports:[
