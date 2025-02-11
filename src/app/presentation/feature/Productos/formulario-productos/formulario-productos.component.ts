@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Producto } from '../../../../core/entities/Producto/productos';
-import { UseCaseCrearProductoService } from '../../../../core/use-cases/Productos/use-case-crear-producto.service';
+import { Producto } from '../../../../Domain/entities/Producto/productos';
+import { UseCaseCrearProductoService } from '../../../../use-cases/Productos/use-case-crear-producto.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -56,7 +56,7 @@ export class FormularioProductosComponent {
             return;
           }
           this.nuevoProducto.Imagen_url = response.imagen_url;
-          this.nuevoProducto.Fecha_creacion = this.getCurrentDateTime(); 
+          this.nuevoProducto.Fecha_creacion = this.getCurrentDateTime();
           this.crearProducto.execute(this.nuevoProducto).subscribe(
             (productoAgregado) => {
               console.log('Producto agregado:', productoAgregado);

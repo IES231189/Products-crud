@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Producto } from '../core/entities/Producto/productos';
-import { UseCaseEliminarProductoService } from '../core/use-cases/Productos/use-case-eliminar-producto.service';
+import { Producto } from '../Domain/entities/Producto/productos';
+import { UseCaseEliminarProductoService } from '../use-cases/Productos/use-case-eliminar-producto.service';
+import { ObtenerProductosService } from '../use-cases/Productos/obtener-productos.service';
+import { UseCaseActualizarProductoService } from '../use-cases/Productos/use-case-actualizar-producto.service';
 
-import { ObtenerProductosService } from '../core/use-cases/Productos/obtener-productos.service';
-import { UseCaseActualizarProductoService } from '../core/use-cases/Productos/use-case-actualizar-producto.service';
+
 
 @Injectable({
   providedIn: 'root'

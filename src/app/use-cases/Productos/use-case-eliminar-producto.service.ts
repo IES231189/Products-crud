@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { EliminarProductoRepositoryService } from '../../../infraestructure/repositories/eliminar-producto-repository.service';
-
+import { EliminarProductoRepositoryService } from '../../infraestructure/repositories/eliminar-producto-repository.service';
 import { Observable } from 'rxjs';
 
 @Injectable({

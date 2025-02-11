@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { CrearProductoRepositoryService } from '../../../infraestructure/repositories/crear-producto-repository.service';
-import { Producto } from '../../entities/Producto/productos';
+import { CrearProductoRepositoryService } from '../../infraestructure/repositories/crear-producto-repository.service';
+import { Producto } from '../../Domain/entities/Producto/productos';
 import { Observable } from 'rxjs';
 
 @Injectable({
